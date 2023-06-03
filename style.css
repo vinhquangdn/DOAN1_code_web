@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banner{
+    margin-top: 20px;
+    height: 630px;
+    width: 1280px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bodyweb{
+    margin: 20px 80px;
+    height: 530px;
+    width: 1200px;
+    background-color: rgb(231, 245, 245);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+/*--------------------------header------------------------*/
+.header{
+    border-radius: 30px 30px;
+    height: 60px;
+    width: 1200px;
+    background-color: rgb(139, 206, 245);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:0.9cm;
+    color: rgb(31, 6, 252);
+    font-weight: 1000;
+}
+/*---------------------------room1---------------------------*/
+.room1{
+    height: 470px;
+    width: 300px;
+    background-image: linear-gradient(rgb(250, 106, 106), rgb(240, 240, 141));
+    border-radius: 28px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.sensor1{
+    height: 350px;
+    width: 250px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.imgsensor1{
+    height: 155px;
+    width: 200px;
+    background-color: white;
+}
+.imgledsensor1{
+    height: 155px;
+    width: 200px;
+    background-color: white;
+}
+/*---------------------------room2---------------------------*/
+.room2{
+    height: 470px;
+    width: 300px;
+    
+    background-image: linear-gradient(rgb(236, 247, 92), rgb(208, 247, 157));
+    border-radius: 28px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.sensor2{
+    height: 350px;
+    width: 250px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.imgsensor2{
+    height: 155px;
+    width: 200px;
+    background-color: white;
+}
+.imgledsensor2{
+    height: 155px;
+    width: 200px;
+    background-color: white;
+}
+/*---------------------------device---------------------------*/
+.device{
+    height: 470px;
+    width: 380px;
+    background-image: linear-gradient(rgb(162, 164, 247),rgb(167, 228, 247)); 
+    border-radius: 28px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+.signaldevice{
+    height: 350px;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.warningdevice{
+    height: 155px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.imgalarm{
+    height: 155px;
+    width: 140px;
+    background-color: white;
+}
+.imgledwarn{
+    height: 155px;
+    width: 140px;
+    background-color: white;
+}
+.imgleddevice{
+    height: 155px;
+    width: 170px;
+    background-color: white;
+}

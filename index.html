@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đồ án 1</title>
+    <link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+   <div class = "banner">
+        <div class = "header">Hệ thống chống trộm</div>
+        <div class = "bodyweb">
+            
+            <div class = "room1">
+                <div class = "sensor1">
+                    <div class = "imgsensor1">
+                        <center>
+                            <img id="sensor1_img" src="./image/sensor_on.png" alt = "img" style="width: 80%">
+                        </center>
+                        
+                    </div>
+                    <div class = "imgledsensor1">
+                        <center>
+                            <img id="ledsensor1_img" src="./image/led_off.png" alt = "img" style="width: 75%">
+                        </center>
+                        
+                    </div>
+                </div>
+                <button id = "btnsen1_js" class = "btnsen1_css" >Click me</button>
+                <style>
+                    .btnsen1_css{
+                        width: 90px;
+                        height: 50px;
+                        border-radius: 15px 15px;
+                    }
+                </style>
+                
+                
+            </div>
+
+            <div class = "room2">
+                <div class = "sensor2">
+                    <div class = "imgsensor2">
+                       <center>
+                            <img id="sensor2_img" src="./image/sensor_on.png" alt = "img" style="width: 80%">
+                        </center>
+                    </div>
+                    <div class = "imgledsensor2">
+                        <center>
+                            <img id="ledsensor2_img" src="./image/led_off.png" alt = "img" style="width: 75%">
+                        </center>
+                    </div>
+                </div>
+                <button id = "btnsen2_js" class = "btnsen2_css" >Click me</button>
+                <style>
+                    .btnsen2_css{
+                        width: 90px;
+                        height: 50px;
+                        border-radius: 15px 15px;
+                    }
+                </style>
+                
+            </div>
+
+            <div class = "device">
+                <div class = "signaldevice">
+                    <div class = "warningdevice">
+                        <div class = "imgalarm">
+                            <center>
+                                <img id="alarm_img" src="./image/alarm_off.png" alt = "img" style="width: 90%">
+                            </center>
+                        </div>
+                        <div class = "imgledwarn">
+                            <center>
+                                <img id="ledwarn_img" src="./image/led_off.png" alt = "img" style="width: 90%">
+                            </center>
+                        </div>
+                    </div>
+                    
+                    <div class = "imgledchuong">
+                        <center>
+                            <img id="ledchuong_img" src="./image/led_off.png" alt = "img" style="width: 55%">
+                        </center>
+                    </div>
+                </div>
+                <button id = "btnchuong_js" class = "btnchuong_css">Click me</button>
+                <style>
+                    .btnchuong_css{
+                        width: 90px;
+                        height: 50px;
+                        border-radius: 15px 15px;
+                    }
+                </style>
+            </div>
+        </div>    
+   </div> 
+   <script type ="module" src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+    <script type ="module" src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script> 
+    <script type = "module" src = "script.js"></script>
+</body>
+</html>
