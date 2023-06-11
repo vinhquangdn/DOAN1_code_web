@@ -14,8 +14,10 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 //---------------------------------------------btn cam bien 1------------------------------------------------
+//lệnh xét xem có giá trị firebase không
 firebase.database().ref("/He_thong_chong_trom/Phong_1/Btn_cb1").get().then((snapshot) => {
-if(snapshot.exists())
+//lệnh if nay dung de reset lai mach khi reload lại page
+  if(snapshot.exists())
   {
       console.log("Receive data");
       firebase.database().ref("/He_thong_chong_trom/Phong_1").update({
@@ -35,7 +37,7 @@ function func_sen1(){
   //alert(count_btn1);
   if(count_btn1 %2 == 1)
       {
-  
+        //lệnh update dữ liệu lên firebase thông qua web
         firebase.database().ref("/He_thong_chong_trom/Phong_1").update({
         "Btn_cb1": "1" })
         document.getElementById("ledsensor1_img").src = "./image/led1_on.png"
@@ -48,9 +50,9 @@ function func_sen1(){
         document.getElementById("ledsensor1_img").src = "./image/led_off.png"
       }
 }
-  document.getElementById("btnsen1_js").addEventListener("click",func_sen1);
+  document.getElementById("btnsen1_js").addEventListener("click",func_sen1); //khi click nút nhân sẽ kích hoạt hàm func_sen1
 
-
+//lệnh dùng để lấy dữ liệu từ firebase về để web hoạt động
 firebase.database().ref("/He_thong_chong_trom/Phong_1/Btn_cb1").on("value",function(snapshot){
 var btnsen1_status = snapshot.val()
 if (btnsen1_status == "1") 
@@ -186,7 +188,7 @@ else
   }
 });
 //---------------------chuong, led canh bao------------------------------------------------
-
+//lenh reset chuong khi reload page
 firebase.database().ref("/He_thong_chong_trom/Thiet_bi_bao_trom/Chuong_canh_bao").get().then((snapshot) => {
 if(snapshot.exists())
   {
@@ -201,7 +203,7 @@ else
       "Chuong_canh_bao": "0"});
   }
 })
-
+//lenh lay du lieu tu firebase
 firebase.database().ref("/He_thong_chong_trom/Thiet_bi_bao_trom/Chuong_canh_bao").on("value",function(snapshot){
 var chuong_status = snapshot.val()
 if (chuong_status == "1") 
@@ -213,7 +215,7 @@ else
       document.getElementById("alarm_img").src = "./image/alarm_off.png";
   }
 });
-
+//lenh reset led warn khi reload page
 firebase.database().ref("/He_thong_chong_trom/Thiet_bi_bao_trom/Led_canh_bao").get().then((snapshot) => {
 if(snapshot.exists())
   {
@@ -228,7 +230,7 @@ else
       "Led_canh_bao": "0"});
   }
 })
-
+//lenh lay du lieu tu firebase
 firebase.database().ref("/He_thong_chong_trom/Thiet_bi_bao_trom/Led_canh_bao").on("value",function(snapshot){
 var ledwarn_status = snapshot.val()
 if (ledwarn_status == "1") 
